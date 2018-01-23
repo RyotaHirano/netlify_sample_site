@@ -47,11 +47,18 @@ module.exports = {
     //
   },
   resolve: {
-    extensions: ['.js', '.scss', '.sass']
+    alias: {
+      'vue$': 'vue/dist/vue.common.js',
+    },
+    extensions: ['.js', '.scss', '.sass', '.vue']
   },
   plugins,
   module: {
     rules: [
+      {
+        test: /\.vue$/,
+        use: 'vue-loader'
+      },
       {
         test: /\.pug$/,
         exclude: /node_modules/,
