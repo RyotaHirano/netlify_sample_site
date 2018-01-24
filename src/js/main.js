@@ -2,19 +2,16 @@ import Vue from 'vue'
 import '../html/index.pug'
 import '../css/style.scss'
 
-import Sum from './components/Sum'
-
-const a = ['aaaa', '1212121', 'assasaasa']
-console.log(a)
+import typeCount from './components/typeCount'
 
 document.addEventListener('DOMContentLoaded', () => {
   // Sum Component
-  if (document.getElementById('sum')) {
+  if (document.getElementById('typeCount')) {
     /* eslint-disable no-new */
     new Vue({
-      el: '#sum',
-      template: '<Sum/>',
-      components: { Sum }
+      el: '#typeCount',
+      template: '<typeCount/>',
+      components: { typeCount }
     })
   }
 })

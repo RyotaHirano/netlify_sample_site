@@ -1,9 +1,14 @@
 import { mount } from '@vue/test-utils'
-import SumComponent from './../../src/js/components/Sum'
+import typeCountComponent from './../../src/js/components/typeCount'
 
-describe('SumComponent', () => {
+describe('typeCountComponent', () => {
   test('is a Vue instance', () => {
-    const wrapper = mount(SumComponent)
+    const wrapper = mount(typeCountComponent)
     expect(wrapper.isVueInstance()).toBeTruthy()
+  })
+
+  test('vue component name', () => {
+    const wrapper = mount(typeCountComponent)
+    expect(wrapper.name()).toEqual('typeCount')
   })
 })
