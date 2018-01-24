@@ -2,7 +2,7 @@ import Vue from 'vue'
 import '../html/index.pug'
 import '../css/style.scss'
 
-import typeCount from './components/typeCount'
+import TypeCount from './components/TypeCount'
 
 document.addEventListener('DOMContentLoaded', () => {
   // Sum Component
@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     /* eslint-disable no-new */
     new Vue({
       el: '#typeCount',
-      template: '<typeCount/>',
-      components: { typeCount }
+      template: '<TypeCount/>',
+      components: { TypeCount }
     })
   }
 })

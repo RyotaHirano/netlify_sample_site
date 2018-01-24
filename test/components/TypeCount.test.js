@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils'
-import typeCountComponent from './../../src/js/components/typeCount'
+import typeCountComponent from './../../src/js/components/TypeCount'
 
-describe('typeCountComponent', () => {
+describe('TypeCountComponent', () => {
   test('is a Vue instance', () => {
     const wrapper = mount(typeCountComponent)
     expect(wrapper.isVueInstance()).toBeTruthy()

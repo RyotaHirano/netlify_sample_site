@@ -6,6 +6,8 @@
 </template>
 
 <script>
+import strLength from './../modules/strLength'
+
 export default {
   name: 'typeCount',
 
@@ -19,8 +21,7 @@ export default {
   methods: {
     updateStringCount: function(value) {
       this.inputString = value
-      const stringLength = [...value].length
-      this.count = stringLength
+      this.count = strLength(value)
     }
   }
 }
