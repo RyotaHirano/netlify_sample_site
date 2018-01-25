@@ -11,4 +11,20 @@ describe('TypeCountComponent', () => {
     const wrapper = mount(typeCountComponent)
     expect(wrapper.name()).toEqual('typeCount')
   })
+
+  test('has input element', () => {
+    const wrapper = mount(typeCountComponent)
+    const input = wrapper.contains('input')
+    expect(input).toBeTruthy()
+  })
+
+  test('count display', () => {
+    const wrapper = mount(typeCountComponent)
+    const input = wrapper.find('input')
+    input.element.value = 'abc'
+    input.trigger('input')
+
+    const count = wrapper.find('.count')
+    expect(count.text()).toEqual('3文字')
+  })
 })

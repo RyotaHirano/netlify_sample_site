@@ -2,7 +2,7 @@
   .type-count
     p type count component
     input(:value="inputString", @input="updateStringCount($event.target.value)")
-    span {{count}}文字
+    span.count {{count}}文字
 </template>
 
 <script>

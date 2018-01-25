@@ -10,7 +10,7 @@
     "deploy": "yarn build && netlify deploy"
   },
   "engines": {
-    "node": "^8.4.0"
+    "node": "^8.6.0"
   },
   "repository": {
     "type": "git",
